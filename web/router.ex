@@ -20,7 +20,9 @@ defmodule Elixir5280.Router do
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", Elixir5280 do
-  #   pipe_through :api
-  # end
+  scope "/api", Elixir5280 do
+    pipe_through :api
+
+    resources "/blog_posts", BlogPostController, only: [:index, :show]
+  end
 end
