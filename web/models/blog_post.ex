@@ -6,12 +6,11 @@ defmodule Elixir5280.BlogPost do
   end
 
   def get!(id) do
-    case File.exists?(filepath(id)) do
-      true ->
-        Map.merge(%{id: id, html: Earmark.to_html(markdown_data(filename(id)))},
-          meta_data(filename(id)))
-      false ->
-        raise JSONAPI.ResourceNotFound
+    if File.exists?(filepath(id)) do
+      Map.merge(%{id: id, html: Earmark.to_html(markdown_data(filename(id)))},
+        meta_data(filename(id)))
+    else
+      raise JSONAPI.ResourceNotFound
     end
   end
 
