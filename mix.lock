@@ -1,6 +1,7 @@
 %{"cowboy": {:hex, :cowboy, "1.0.3"},
   "cowlib": {:hex, :cowlib, "1.0.1"},
   "decimal": {:hex, :decimal, "1.1.0"},
+  "earmark": {:hex, :earmark, "0.1.19"},
   "ecto": {:hex, :ecto, "1.0.6"},
   "fs": {:hex, :fs, "0.9.2"},
   "phoenix": {:hex, :phoenix, "1.0.3"},
@@ -11,4 +12,6 @@
   "poison": {:hex, :poison, "1.5.0"},
   "poolboy": {:hex, :poolboy, "1.5.1"},
   "postgrex": {:hex, :postgrex, "0.9.1"},
-  "ranch": {:hex, :ranch, "1.1.0"}}
+  "ranch": {:hex, :ranch, "1.1.0"},
+  "yamerl": {:git, "https://github.com/yakaz/yamerl.git", "ae810a808817d9482b4628ae3e20d746e3729fe0", []},
+  "yaml_elixir": {:git, "https://github.com/KamilLelonek/yaml-elixir.git", "702e88cb2a9f5e888f2dda44ecb7b953f0fa8c17", []}}
